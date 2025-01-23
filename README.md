@@ -12,7 +12,7 @@ AfricaVoiceAI is an innovative AI-powered chatbot designed to revolutionize comm
 ## Project Structure
 ```plaintext
 AfricaVoiceAI/
-â”œâ”€â”€ datasets/        # Contains data for AI training (e.g., Hausa speech and text data)
+datasets/        # Contains data for AI training (e.g., Hausa speech and text data)
 models/          # Pre-trained and fine-tuned AI models
 backend/         # Backend API built using Python (Flask/FastAPI)
 frontend/        # User interface built with React.js
@@ -30,7 +30,7 @@ frontend/        # User interface built with React.js
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone AfricaVoiceAI
    ```
 2. Navigate to the project directory:
    ```bash
