@@ -11,7 +11,7 @@ Despite the rapid advancement of AI technologies globally, there is a distinct l
 - The need for businesses, media platforms, and government bodies to engage with Hausa-speaking audiences in a meaningful and effective way.
 
 ## Mission
-AfricaVoiceAIâ€™s mission is to bridge the communication gap by providing an AI-powered platform that supports the Hausa language. Our goal is to make cutting-edge AI technology accessible, functional, and beneficial for millions of Hausa speakers, enhancing communication, education, and business activities across the African continent.
+AfricaVoiceAI mission is to bridge the communication gap by providing an AI-powered platform that supports the Hausa language. Our goal is to make cutting-edge AI technology accessible, functional, and beneficial for millions of Hausa speakers, enhancing communication, education, and business activities across the African continent.
 
 ## Target Audience
 - **Primary Users**: Individuals within the Hausa-speaking population (~50 million globally), who are looking to interact with technology in their native language.
@@ -36,7 +36,7 @@ To become the leading AI-powered language platform in Africa, driving communicat
 
 ## Value Proposition
 - **Accessibility**: Provides an AI solution in a native African language, addressing the need for localized technologies.
-- **Cultural Relevance**: Tailors the AI experience to the Hausa culture, offering features like voice cloning and real-time translations that reflect the communityâ€™s values and language.
+- **Cultural Relevance**: Tailors the AI experience to the Hausa culture, offering features like voice cloning and real-time translations that reflect the community values and language.
 - **Scalability**: Designed to support the entire African continent, AfricaVoiceAI aims to adapt and grow by adding new languages and expanding its services.
 
 ## Future Roadmap
