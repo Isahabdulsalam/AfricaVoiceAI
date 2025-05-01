@@ -1,36 +1,49 @@
-# app/__init__.py
+#!/usr/bin/env python3
+
+import logging
+import os
+import sys
+
+# Set logging level to WARNING for most of the app
+logging.basicConfig(level=logging.WARNING)
+logging.getLogger('werkzeug').setLevel(logging.INFO)  # To show only required werkzeug logs
+
+logger = logging.getLogger(__name__)
+
+"""Database Initialization with an instance of Flask app"""
+
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+from flask_jwt_extended import JWTManager
 from flask_migrate import Migrate
-from flask_login import LoginManager
 from config import Config
+from app.db import db
+from app.models.user import User
+from app.routes.auth import auth_bp
+from flask_cors import CORS
+from flask_mail import Mail
 
 # Initialize extensions
-db = SQLAlchemy()
 migrate = Migrate()
-login_manager = LoginManager()
+jwt = JWTManager()
+mail = Mail()
 
 def create_app():
-    """Create and configure the Flask app."""
+    """Database mapping with flask app"""
     app = Flask(__name__)
 
-    # Apply the configuration from Config class
+    # Load the configuration from the Config class in config.py
     app.config.from_object(Config)
 
     # Initialize extensions with the app instance
     db.init_app(app)
     migrate.init_app(app, db)
-    login_manager.init_app(app)
+    jwt.init_app(app)
+    mail.init_app(app)
+    # Enables CORS for the frontend URL
 
-    # Import and register blueprints after app initialization
-    from app.routes.auth import auth_bp
+    #CORS(app, origins=["https://localhost:3000"], supports_credentials=True)
+
+    # Register blueprints for the routes
     app.register_blueprint(auth_bp, url_prefix='/auth')
-
-    # Import models here to avoid circular imports
-    from app.models.user import User
-
-    # Set the login view for Flask-Login
-    login_manager.login_view = 'auth.login'
-    login_manager.login_message = "Please log in to access this page."
 
     return app
