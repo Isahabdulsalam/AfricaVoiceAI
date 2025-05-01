@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function AboutPage() {
   return (
-    <PageLayout title="About Us">
+    <PageLayout title="About Us" showFooter={false}>
       <p className="mb-6">
         AfricaVoiceAI is dedicated to bridging language barriers across Africa through advanced AI technology. Our
         mission is to preserve and promote African languages while enabling seamless communication and technological
