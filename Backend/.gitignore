@@ -1,3 +1,5 @@
 venv
 .env
 migrations
+__pycache__
+rasa
