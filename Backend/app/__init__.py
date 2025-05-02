@@ -21,6 +21,7 @@ from app.models.user import User
 from app.routes.auth import auth_bp
 from flask_cors import CORS
 from flask_mail import Mail
+from app.routes.speech_routes import speech_bp
 
 # Initialize extensions
 migrate = Migrate()
@@ -45,5 +46,6 @@ def create_app():
 
     # Register blueprints for the routes
     app.register_blueprint(auth_bp, url_prefix='/auth')
+    app.register_blueprint(speech_bp, url_prefix='/api')
 
     return app

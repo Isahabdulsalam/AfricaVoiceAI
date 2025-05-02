@@ -6,7 +6,7 @@ from flask_jwt_extended import (
     create_access_token, jwt_required, get_jwt_identity
 )
 from flask_mail import Message
-from app.mail import mail
+#from app.mail import mail
 import random, os
 from itsdangerous import URLSafeTimedSerializer, SignatureExpired
 from oauthlib.oauth2 import WebApplicationClient
