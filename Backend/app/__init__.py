@@ -22,6 +22,7 @@ from app.routes.auth import auth_bp
 from flask_cors import CORS
 from flask_mail import Mail
 from app.routes.speech_routes import speech_bp
+#from app.routes.
 
 # Initialize extensions
 migrate = Migrate()
